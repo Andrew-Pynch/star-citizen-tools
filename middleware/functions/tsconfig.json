@@ -1,15 +1,20 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "outDir": "lib",
-    "sourceMap": true,
-    "strict": true,
-    "target": "es2017"
-  },
-  "compileOnSave": true,
-  "include": [
-    "src"
-  ]
+    "compilerOptions": {
+        "skipLibCheck": true,
+        "useUnknownInCatchVariables": false,
+        "module": "commonjs",
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "outDir": "lib",
+        "sourceMap": true,
+        "strict": true,
+        "target": "es2017",
+        "noUnusedParameters": false
+    },
+    "compileOnSave": true,
+    "include": ["src"],
+    "rules": {
+        "object-curly-spacing": [2, "always"],
+        "quotes": [2, "single", { "allowTemplateLiterals": true }]
+    }
 }

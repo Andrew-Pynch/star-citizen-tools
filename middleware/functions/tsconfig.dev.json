@@ -1,5 +1,21 @@
 {
-  "include": [
-    ".eslintrc.js"
-  ]
+    "compilerOptions": {
+        "skipLibCheck": true,
+        "useUnknownInCatchVariables": false,
+        "module": "commonjs",
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "outDir": "lib",
+        "sourceMap": true,
+        "strict": true,
+        "target": "es2017",
+        "allowUnusedLabels": true,
+        "noUnusedParameters": false
+    },
+    "compileOnSave": true,
+    "include": ["src"],
+    "rules": {
+        "object-curly-spacing": [2, "always"],
+        "quotes": [2, "single", { "allowTemplateLiterals": true }]
+    }
 }
