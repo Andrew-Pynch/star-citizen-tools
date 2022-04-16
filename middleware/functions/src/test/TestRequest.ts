@@ -1,6 +1,7 @@
 import { DataValidator } from 'data-validation-tools'
+import { APP } from '..'
 import { NetworkCode } from '../util/network'
-import { EPXLogType } from '../util/pxlogger'
+import { EPXLogType, IPXLog } from '../util/pxlogger'
 import { TestSchema } from './TestSchema'
 
 APP.get('/test', async (req: any, res: any) => {
